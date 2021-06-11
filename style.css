@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&Noto+Sans+KR');
+
+:root {
+    --primary: #b4dae5;
+    --primary-dark: #a0cfd8;
+    --primary-light: #bee3e2;
+    --main-background: #f5f5f5;
+    --container-background: rgba(0, 0, 0, 0.1);
+    --outline: #a0cfd8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR',sans-serif;
+    background-color: var(--main-background);
+    color: var(--primary-dark);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Poppins',sans-serif;
+    color: var(--outline);
+    font-size: 4rem;
+    text-align: center;
+}
+
+form {
+    box-shadow: 0px 4px 10px var(--container-background);
+    max-width: 100%;
+    width: 400px;
+}
+
+.input {
+    border: none;
+    color: var(--primary-dark);
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    display: block;
+    width: 100%;
+}
+
+.input::placeholder {
+    color: var(--primary-light);
+}
+
+.input:focus {
+    outline-color:  var(--outline);
+}
+
+.todos {
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.todos li {
+    border: 1px solid var(--container-background);
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    color: var(--primary-dark);
+}
+
+.todos li.completed {
+    color: var(--primary);
+    text-decoration: line-through;
+    font-weight: 400;
+}
+
+small {
+    color: var(--primary-dark);
+    margin-top: 3rem;
+    text-align: center;
+}
